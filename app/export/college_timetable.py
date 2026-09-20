@@ -539,7 +539,7 @@ def export_college_pdf(
     path: Path,
     title: str = "College Timetable",
     subtitle: str = "",
-    college_name: str = "College Timetable System",
+    college_name: str = "College Timetable System (CRG)",
 ) -> Path:
     """
     Export human-readable print-ready college timetable PDF using ReportLab.

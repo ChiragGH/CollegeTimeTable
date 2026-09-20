@@ -43,7 +43,7 @@ class ExportContext:
     teachers: Dict[str, Teacher] = field(default_factory=dict)
     rooms: Dict[str, Room] = field(default_factory=dict)
     subjects: Dict[str, Subject] = field(default_factory=dict)
-    college_name: str = "College Timetable System"
+    college_name: str = "College Timetable System (CRG)"
     generated_at: str = field(
         default_factory=lambda: datetime.now().strftime("%d %b %Y, %H:%M")
     )

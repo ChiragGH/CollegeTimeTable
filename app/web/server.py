@@ -1,10 +1,13 @@
 """
+====================================================================
+Project: College Timetable Generation & Scheduling System
+Author / Trademark: CRG
+Copyright (c) 2026 CRG. All rights reserved.
+====================================================================
 Flask web server for the College Timetable system.
 
 Serves the SPA frontend and provides JSON API endpoints that wrap
-the existing Python backend modules.  No scheduling logic is
-duplicated here -- all intelligence lives in the ``app.engine``
-and ``app.setup`` packages.
+the existing Python backend modules.
 """
 
 import sys
@@ -957,7 +960,7 @@ def create_app(data_dir: str = None) -> Flask:
             teachers={t.teacher_id: t for t in state.teachers},
             rooms={r.room_id: r for r in state.rooms},
             subjects={su.subject_id: su for su in state.subjects},
-            college_name="College Timetable System",
+            college_name="College Timetable System (CRG)",
         )
 
     def _get_timetable_exporter(tt: Timetable) -> TimetableExporter:

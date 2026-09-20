@@ -1,10 +1,15 @@
 """
+====================================================================
+Project: College Timetable Generation & Scheduling System
+Author / Trademark: CRG
+Copyright (c) 2026 CRG. All rights reserved.
+====================================================================
 Desktop Launcher for College Timetable System.
 
 This script is the main entry point for the standalone Windows executable (.exe).
 It:
   1. Finds an available local port (default: 5000).
-  2. Spawns a background thread to launch the default web browser once the server is ready.
+  2. Spawns a background thread to launch the standalone desktop app window.
   3. Serves the Flask application via Waitress (production WSGI server for Windows).
 """
 
@@ -97,14 +102,15 @@ def main():
     port = find_free_port(5000)
     url = f"http://127.0.0.1:{port}"
 
-    print("\n" + "=" * 56, flush=True)
-    print("       College Timetable System (Desktop Edition)", flush=True)
-    print("=" * 56, flush=True)
+    print("\n" + "=" * 60, flush=True)
+    print("    College Timetable System (Desktop Edition) by CRG", flush=True)
+    print("             Copyright (c) 2026 CRG", flush=True)
+    print("=" * 60, flush=True)
     print(f"  * Starting server at: {url}", flush=True)
-    print("  * Opening your web browser automatically...", flush=True)
+    print("  * Opening desktop application window...", flush=True)
     print("  * Keep this window open while using the application.", flush=True)
-    print("  * To exit, close this window or press Ctrl+C.", flush=True)
-    print("=" * 56 + "\n", flush=True)
+    print("  * To exit, close the application window or press Ctrl+C.", flush=True)
+    print("=" * 60 + "\n", flush=True)
 
     # Start desktop app window launcher thread
     threading.Thread(target=launch_app_window, args=(url,), daemon=True).start()

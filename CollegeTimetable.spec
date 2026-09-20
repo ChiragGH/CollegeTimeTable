@@ -1,4 +1,9 @@
 # -*- mode: python ; coding: utf-8 -*-
+# ====================================================================
+# Project: College Timetable Generation & Scheduling System
+# Author / Trademark: CRG
+# Copyright (c) 2026 CRG. All rights reserved.
+# ====================================================================
 
 from pathlib import Path
 import sys

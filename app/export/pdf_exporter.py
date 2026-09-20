@@ -493,7 +493,7 @@ def _make_footer(ctx: ExportContext):
         canvas.drawString(
             MARGIN, 10 * mm,
             _pdf_safe(f"{ctx.college_name} — {ctx.session_id} — "
-                      f"generated {ctx.generated_at}"),
+                      f"generated {ctx.generated_at} • by CRG"),
         )
         canvas.drawRightString(
             PAGE_SIZE[0] - MARGIN, 10 * mm,

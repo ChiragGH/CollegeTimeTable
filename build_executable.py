@@ -1,16 +1,22 @@
 """
+====================================================================
+Project: College Timetable Generation & Scheduling System
+Author / Trademark: CRG
+Copyright (c) 2026 CRG. All rights reserved.
+====================================================================
 Build Script for College Timetable Standalone Windows Application.
 
 Usage:
     python build_executable.py
 
 This script:
-  1. Runs PyInstaller using CollegeTimetable.spec.
-  2. Ensures the distribution folder (dist/CollegeTimetable) contains:
-     - CollegeTimetable.exe
+  1. Cleans old build/dist files.
+  2. Runs PyInstaller using CollegeTimetable.spec.
+  3. Ensures the distribution folder (dist/CollegeTimetable) contains:
+     - CollegeTimetable.exe (windowed desktop app)
      - Data/ (master Excel files, timetables, sessions)
      - README_HOW_TO_RUN.txt
-  3. Creates a portable zip archive for easy distribution: dist/CollegeTimetable_Portable.zip
+  4. Creates a portable zip archive for easy distribution: dist/CollegeTimetable_Portable.zip
 """
 
 import sys
@@ -26,16 +32,17 @@ DATA_SRC = PROJECT_ROOT / "Data"
 ZIP_OUTPUT = PROJECT_ROOT / "dist" / "CollegeTimetable_Portable.zip"
 
 README_TEXT = """========================================================================
-             COLLEGE TIMETABLE GENERATION & SCHEDULING SYSTEM
+       COLLEGE TIMETABLE GENERATION & SCHEDULING SYSTEM
+                   Developed by CRG
+         Copyright (c) 2026 CRG. All Rights Reserved.
 ========================================================================
 
 HOW TO RUN:
 1. Double-click "CollegeTimetable.exe".
-2. A small console window will open, and your default web browser
-   will automatically open to the application dashboard:
-   http://127.0.0.1:5000 (or another port if 5000 is busy).
+2. The application will open in its own dedicated desktop window
+   (no terminal or command prompt will appear).
 3. Use the system as usual (generate timetables, export PDF/Excel, etc.).
-4. To exit: Close the console window or press Ctrl+C.
+4. To exit: Simply close the application window.
 
 DATA & EXCEL FILES:
 - The "Data/master" folder contains all input Excel sheets:
@@ -58,6 +65,17 @@ def main():
     print("=" * 65)
     print("  Building College Timetable Standalone Windows Executable")
     print("=" * 65)
+
+    # Terminate any running CollegeTimetable.exe to prevent file locks
+    subprocess.run(["taskkill", "/F", "/IM", "CollegeTimetable.exe"], capture_output=True)
+
+    # Delete old ZIP if exists
+    if ZIP_OUTPUT.exists():
+        try:
+            ZIP_OUTPUT.unlink()
+            print(f"  * Removed old {ZIP_OUTPUT.name}")
+        except Exception:
+            pass
 
     # 1. Run PyInstaller
     print("\n[1/4] Running PyInstaller...")
