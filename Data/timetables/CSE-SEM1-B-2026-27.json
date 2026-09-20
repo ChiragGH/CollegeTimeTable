@@ -1,0 +1,872 @@
+{
+  "timetable_id": "CSE-SEM1-B-2026-27",
+  "display_name": "CSE — Semester 1 — Section B",
+  "context_code": "CSE-SEM1-B-2026-27",
+  "academic_year": "2026-27",
+  "branch": "CSE",
+  "semester": 1,
+  "section": "B",
+  "status": "VALID",
+  "version": 3,
+  "created_at": "2026-09-15T07:17:39",
+  "updated_at": "2026-09-15T07:17:52",
+  "generation_seed": 87993,
+  "session_id": "CSE-SEM1-2026-27",
+  "placements_count": 30,
+  "placements": [
+    {
+      "placement_id": "P0001",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A027",
+      "subject_id": "SUB006",
+      "short_name": "EW",
+      "subject_short_name": "EW",
+      "subject_name": "Electronics Workshop",
+      "teacher_id": "T065",
+      "teacher_name": "VF2",
+      "room_id": "R001",
+      "room_name": "CC1",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0002"
+    },
+    {
+      "placement_id": "P0002",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A028",
+      "subject_id": "SUB006",
+      "short_name": "EW",
+      "subject_short_name": "EW",
+      "subject_name": "Electronics Workshop",
+      "teacher_id": "T066",
+      "teacher_name": "VF3",
+      "room_id": "R002",
+      "room_name": "CC2",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0001"
+    },
+    {
+      "placement_id": "P0005",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A027",
+      "subject_id": "SUB006",
+      "short_name": "EW",
+      "subject_short_name": "EW",
+      "subject_name": "Electronics Workshop",
+      "teacher_id": "T065",
+      "teacher_name": "VF2",
+      "room_id": "R006",
+      "room_name": "IOT",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0006"
+    },
+    {
+      "placement_id": "P0006",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A028",
+      "subject_id": "SUB006",
+      "short_name": "EW",
+      "subject_short_name": "EW",
+      "subject_name": "Electronics Workshop",
+      "teacher_id": "T066",
+      "teacher_name": "VF3",
+      "room_id": "R003",
+      "room_name": "CC3",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0005"
+    },
+    {
+      "placement_id": "P0007",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A027",
+      "subject_id": "SUB006",
+      "short_name": "EW",
+      "subject_short_name": "EW",
+      "subject_name": "Electronics Workshop",
+      "teacher_id": "T065",
+      "teacher_name": "VF2",
+      "room_id": "R003",
+      "room_name": "CC3",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0008"
+    },
+    {
+      "placement_id": "P0008",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A028",
+      "subject_id": "SUB006",
+      "short_name": "EW",
+      "subject_short_name": "EW",
+      "subject_name": "Electronics Workshop",
+      "teacher_id": "T066",
+      "teacher_name": "VF3",
+      "room_id": "R004",
+      "room_name": "CC4",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0007"
+    },
+    {
+      "placement_id": "P0017",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A005",
+      "subject_id": "SUB001",
+      "short_name": "ENG-I",
+      "subject_short_name": "ENG-I",
+      "subject_name": "English and Communication Skills - I",
+      "teacher_id": "T005",
+      "teacher_name": "LU",
+      "room_id": "R006",
+      "room_name": "IOT",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0018"
+    },
+    {
+      "placement_id": "P0018",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A006",
+      "subject_id": "SUB001",
+      "short_name": "ENG-I",
+      "subject_short_name": "ENG-I",
+      "subject_name": "English and Communication Skills - I",
+      "teacher_id": "T006",
+      "teacher_name": "DJ",
+      "room_id": "R001",
+      "room_name": "CC1",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0017"
+    },
+    {
+      "placement_id": "P0021",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A019",
+      "subject_id": "SUB004",
+      "short_name": "FIT",
+      "subject_short_name": "FIT",
+      "subject_name": "Fundamentals of IT",
+      "teacher_id": "T057",
+      "teacher_name": "VF3",
+      "room_id": "R001",
+      "room_name": "CC1",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0022"
+    },
+    {
+      "placement_id": "P0022",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A020",
+      "subject_id": "SUB004",
+      "short_name": "FIT",
+      "subject_short_name": "FIT",
+      "subject_name": "Fundamentals of IT",
+      "teacher_id": "T058",
+      "teacher_name": "VF4",
+      "room_id": "R004",
+      "room_name": "CC4",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0021"
+    },
+    {
+      "placement_id": "P0023",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A023",
+      "subject_id": "SUB005",
+      "short_name": "CW",
+      "subject_short_name": "CW",
+      "subject_name": "Computer Workshop",
+      "teacher_id": "T061",
+      "teacher_name": "JK",
+      "room_id": "R003",
+      "room_name": "CC3",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0024"
+    },
+    {
+      "placement_id": "P0024",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A024",
+      "subject_id": "SUB005",
+      "short_name": "CW",
+      "subject_short_name": "CW",
+      "subject_name": "Computer Workshop",
+      "teacher_id": "T062",
+      "teacher_name": "SK",
+      "room_id": "R001",
+      "room_name": "CC1",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0023"
+    },
+    {
+      "placement_id": "P0025",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A023",
+      "subject_id": "SUB005",
+      "short_name": "CW",
+      "subject_short_name": "CW",
+      "subject_name": "Computer Workshop",
+      "teacher_id": "T061",
+      "teacher_name": "JK",
+      "room_id": "R002",
+      "room_name": "CC2",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0026"
+    },
+    {
+      "placement_id": "P0026",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A024",
+      "subject_id": "SUB005",
+      "short_name": "CW",
+      "subject_short_name": "CW",
+      "subject_name": "Computer Workshop",
+      "teacher_id": "T062",
+      "teacher_name": "SK",
+      "room_id": "R006",
+      "room_name": "IOT",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0025"
+    },
+    {
+      "placement_id": "P0035",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A013",
+      "subject_id": "SUB003",
+      "short_name": "AP-I",
+      "subject_short_name": "AP-I",
+      "subject_name": "Applied Physics - I",
+      "teacher_id": "T051",
+      "teacher_name": "MT",
+      "room_id": "R001",
+      "room_name": "CC1",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0036"
+    },
+    {
+      "placement_id": "P0036",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A014",
+      "subject_id": "SUB003",
+      "short_name": "AP-I",
+      "subject_short_name": "AP-I",
+      "subject_name": "Applied Physics - I",
+      "teacher_id": "T052",
+      "teacher_name": "GA",
+      "room_id": "R003",
+      "room_name": "CC3",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0035"
+    },
+    {
+      "placement_id": "P0037",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A019",
+      "subject_id": "SUB004",
+      "short_name": "FIT",
+      "subject_short_name": "FIT",
+      "subject_name": "Fundamentals of IT",
+      "teacher_id": "T057",
+      "teacher_name": "VF3",
+      "room_id": "R006",
+      "room_name": "IOT",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0038"
+    },
+    {
+      "placement_id": "P0038",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A020",
+      "subject_id": "SUB004",
+      "short_name": "FIT",
+      "subject_short_name": "FIT",
+      "subject_name": "Fundamentals of IT",
+      "teacher_id": "T058",
+      "teacher_name": "VF4",
+      "room_id": "R005",
+      "room_name": "CC5",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0037"
+    },
+    {
+      "placement_id": "P0039",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A023",
+      "subject_id": "SUB005",
+      "short_name": "CW",
+      "subject_short_name": "CW",
+      "subject_name": "Computer Workshop",
+      "teacher_id": "T061",
+      "teacher_name": "JK",
+      "room_id": "R001",
+      "room_name": "CC1",
+      "section": "B",
+      "group": "G1",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0040"
+    },
+    {
+      "placement_id": "P0040",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A024",
+      "subject_id": "SUB005",
+      "short_name": "CW",
+      "subject_short_name": "CW",
+      "subject_name": "Computer Workshop",
+      "teacher_id": "T062",
+      "teacher_name": "SK",
+      "room_id": "R003",
+      "room_name": "CC3",
+      "section": "B",
+      "group": "G2",
+      "activity_type": "PRACTICAL",
+      "block_size": 2,
+      "slots": [
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        }
+      ],
+      "is_linked_parallel": true,
+      "linked_placement_id": "P0039"
+    },
+    {
+      "placement_id": "P0045",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A008",
+      "subject_id": "SUB002",
+      "short_name": "AM-I",
+      "subject_short_name": "AM-I",
+      "subject_name": "Applied Mathematics - I",
+      "teacher_id": "T008",
+      "teacher_name": "LK",
+      "room_id": "R039",
+      "room_name": "L13",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "TUE",
+          "period": 6
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0046",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A012",
+      "subject_id": "SUB003",
+      "short_name": "AP-I",
+      "subject_short_name": "AP-I",
+      "subject_name": "Applied Physics - I",
+      "teacher_id": "T012",
+      "teacher_name": "MANJU",
+      "room_id": "R031",
+      "room_name": "L5",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "FRI",
+          "period": 5
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0047",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A008",
+      "subject_id": "SUB002",
+      "short_name": "AM-I",
+      "subject_short_name": "AM-I",
+      "subject_name": "Applied Mathematics - I",
+      "teacher_id": "T008",
+      "teacher_name": "LK",
+      "room_id": "R037",
+      "room_name": "L11",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "MON",
+          "period": 5
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0048",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A018",
+      "subject_id": "SUB004",
+      "short_name": "FIT",
+      "subject_short_name": "FIT",
+      "subject_name": "Fundamentals of IT",
+      "teacher_id": "T056",
+      "teacher_name": "VF2",
+      "room_id": "R027",
+      "room_name": "L1",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "WED",
+          "period": 3
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0050",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A012",
+      "subject_id": "SUB003",
+      "short_name": "AP-I",
+      "subject_short_name": "AP-I",
+      "subject_name": "Applied Physics - I",
+      "teacher_id": "T012",
+      "teacher_name": "MANJU",
+      "room_id": "R028",
+      "room_name": "L2",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "THU",
+          "period": 4
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0051",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A008",
+      "subject_id": "SUB002",
+      "short_name": "AM-I",
+      "subject_short_name": "AM-I",
+      "subject_name": "Applied Mathematics - I",
+      "teacher_id": "T008",
+      "teacher_name": "LK",
+      "room_id": "R039",
+      "room_name": "L13",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "THU",
+          "period": 7
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0052",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A004",
+      "subject_id": "SUB001",
+      "short_name": "ENG-I",
+      "subject_short_name": "ENG-I",
+      "subject_name": "English and Communication Skills - I",
+      "teacher_id": "T004",
+      "teacher_name": "PB",
+      "room_id": "R038",
+      "room_name": "L12",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "WED",
+          "period": 7
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0056",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A008",
+      "subject_id": "SUB002",
+      "short_name": "AM-I",
+      "subject_short_name": "AM-I",
+      "subject_name": "Applied Mathematics - I",
+      "teacher_id": "T008",
+      "teacher_name": "LK",
+      "room_id": "R036",
+      "room_name": "L10",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "WED",
+          "period": 4
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0058",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A018",
+      "subject_id": "SUB004",
+      "short_name": "FIT",
+      "subject_short_name": "FIT",
+      "subject_name": "Fundamentals of IT",
+      "teacher_id": "T056",
+      "teacher_name": "VF2",
+      "room_id": "R028",
+      "room_name": "L2",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "THU",
+          "period": 1
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    },
+    {
+      "placement_id": "P0059",
+      "timetable_id": "CSE-SEM1-B-2026-27",
+      "assignment_id": "A004",
+      "subject_id": "SUB001",
+      "short_name": "ENG-I",
+      "subject_short_name": "ENG-I",
+      "subject_name": "English and Communication Skills - I",
+      "teacher_id": "T004",
+      "teacher_name": "PB",
+      "room_id": "R038",
+      "room_name": "L12",
+      "section": "B",
+      "group": "ALL",
+      "activity_type": "LECTURE",
+      "block_size": 1,
+      "slots": [
+        {
+          "day": "THU",
+          "period": 3
+        }
+      ],
+      "is_linked_parallel": false,
+      "linked_placement_id": null
+    }
+  ],
+  "history": [
+    {
+      "version": 1,
+      "timestamp": "2026-09-15T07:17:39",
+      "action": "CREATED",
+      "description": "Initial generation with seed 12345",
+      "changes": []
+    },
+    {
+      "version": 2,
+      "timestamp": "2026-09-15T07:17:50",
+      "action": "REGENERATED",
+      "description": "Regenerated with seed 643076",
+      "changes": []
+    },
+    {
+      "version": 3,
+      "timestamp": "2026-09-15T07:17:52",
+      "action": "REGENERATED",
+      "description": "Regenerated with seed 87993",
+      "changes": []
+    }
+  ],
+  "metadata": {}
+}

@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# PyInstaller / Build artifacts (keep git repo light; binaries go to GitHub Releases)
+build/
+dist/
+*.spec.bak
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor / IDE configs
+.vscode/
+.idea/
+.claude/
+
+# Temporary sessions & logs
+Data/sessions/
+*.log
+
+# Windows thumbnail cache
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,10 @@
+# College Timetable System — Python dependencies
+# Install:  pip install -r requirements.txt
+
+flask>=3.0          # web UI + JSON API
+openpyxl>=3.1       # master-data I/O + XLSX timetable export
+reportlab>=4.0      # PDF timetable export
+pymupdf>=1.24        # PDF parsing and validation in tests
+pytest>=8.0         # test suite
+waitress>=3.0       # production WSGI server for Windows desktop app
+pyinstaller>=6.0    # standalone executable bundler
