@@ -10,13 +10,13 @@ Usage:
     python build_executable.py
 
 This script:
-  1. Cleans old build/dist files.
+  1. Detects virtual environment Python (.venv) and terminates running instances.
   2. Runs PyInstaller using CollegeTimetable.spec.
   3. Ensures the distribution folder (dist/CollegeTimetable) contains:
      - CollegeTimetable.exe (windowed desktop app)
      - Data/ (master Excel files, timetables, sessions)
      - README_HOW_TO_RUN.txt
-  4. Creates a portable zip archive for easy distribution: dist/CollegeTimetable_Portable.zip
+  4. Creates a clean portable zip archive: dist/CollegeTimetable_Portable.zip
 """
 
 import sys
@@ -39,24 +39,25 @@ README_TEXT = """===============================================================
 
 HOW TO RUN:
 1. Double-click "CollegeTimetable.exe".
-2. The application will open in its own dedicated desktop window
+2. The application will start and open its dedicated desktop window
    (no terminal or command prompt will appear).
-3. Use the system as usual (generate timetables, export PDF/Excel, etc.).
+3. Use the system as usual (generate timetables, edit placements, export PDF/Excel).
 4. To exit: Simply close the application window.
 
 DATA & EXCEL FILES:
-- The "Data/master" folder contains all input Excel sheets:
+- The "Data/master" folder contains all master Excel files:
   - rooms.xlsx
   - subjects.xlsx
   - teachers.xlsx
   - workloads.xlsx
-- You can update or replace these Excel files anytime. When you restart
-  the application, the new data will be loaded automatically!
-- Saved timetables and exported files are stored in "Data/timetables/".
+- You can update or replace these Excel files anytime. When you start
+  the application, the new data is loaded automatically!
+- Saved timetables and exports are stored in "Data/timetables/".
+- Application logs are recorded in "Data/logs/desktop.log".
 
 REQUIREMENTS:
 - Windows 10 or 11 (64-bit).
-- No Python installation required!
+- No Python or technical dependencies required.
 ========================================================================
 """
 
@@ -64,10 +65,19 @@ REQUIREMENTS:
 def main():
     print("=" * 65)
     print("  Building College Timetable Standalone Windows Executable")
+    print("                 Author / Trademark: CRG")
     print("=" * 65)
 
+    # Detect python executable (prefer .venv if present)
+    venv_python = PROJECT_ROOT / ".venv" / "Scripts" / "python.exe"
+    python_exe = str(venv_python) if venv_python.exists() else sys.executable
+    print(f"  * Using Python: {python_exe}")
+
     # Terminate any running CollegeTimetable.exe to prevent file locks
-    subprocess.run(["taskkill", "/F", "/IM", "CollegeTimetable.exe"], capture_output=True)
+    try:
+        subprocess.run(["taskkill", "/F", "/IM", "CollegeTimetable.exe"], capture_output=True)
+    except Exception:
+        pass
 
     # Delete old ZIP if exists
     if ZIP_OUTPUT.exists():
@@ -80,7 +90,7 @@ def main():
     # 1. Run PyInstaller
     print("\n[1/4] Running PyInstaller...")
     cmd = [
-        sys.executable,
+        python_exe,
         "-m",
         "PyInstaller",
         "--clean",
@@ -99,7 +109,7 @@ def main():
 
     # 2. Ensure Data folder is present in dist
     dist_data = DIST_DIR / "Data"
-    print(f"[3/4] Ensuring Data directory exists in {dist_data}...")
+    print(f"\n[3/4] Ensuring Data directory exists in {dist_data}...")
     if DATA_SRC.exists():
         shutil.copytree(str(DATA_SRC), str(dist_data), dirs_exist_ok=True)
         print("      -> Data folder copied successfully.")

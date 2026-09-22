@@ -7,18 +7,28 @@
 
 from pathlib import Path
 import sys
+from PyInstaller.utils.hooks import collect_all
 
 block_cipher = None
 project_root = Path.cwd()
 
+# Core static, template, and seed data assets
 datas = [
     (str(project_root / "app" / "web" / "templates"), "app/web/templates"),
     (str(project_root / "app" / "web" / "static"), "app/web/static"),
     (str(project_root / "Data"), "Data"),
 ]
 
+binaries = []
+
 hidden_imports = [
     "waitress",
+    "waitress.adjustments",
+    "waitress.channel",
+    "waitress.receiver",
+    "waitress.server",
+    "waitress.task",
+    "waitress.utilities",
     "flask",
     "jinja2",
     "markupsafe",
@@ -72,10 +82,20 @@ hidden_imports = [
     "app.web.server",
 ]
 
+# Ensure complete collection of critical dependencies
+for package in ["waitress", "openpyxl", "reportlab", "pymupdf"]:
+    try:
+        pkg_datas, pkg_binaries, pkg_hidden = collect_all(package)
+        datas += pkg_datas
+        binaries += pkg_binaries
+        hidden_imports += pkg_hidden
+    except Exception as e:
+        print(f"Warning: collect_all({package}) failed: {e}")
+
 a = Analysis(
     ["run_desktop.py"],
     pathex=[str(project_root)],
-    binaries=[],
+    binaries=binaries,
     datas=datas,
     hiddenimports=hidden_imports,
     hookspath=[],
